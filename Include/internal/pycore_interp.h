@@ -103,6 +103,11 @@ struct _is {
         size_t stacksize;
     } threads;
 
+
+    // CUSTOM MODIFICATIONS (hey guys, don't mind me)
+    void* passthrough;
+
+
     /* Reference to the _PyRuntime global variable. This field exists
        to not have to pass runtime in addition to tstate to a function.
        Get runtime from tstate: tstate->interp->runtime. */
